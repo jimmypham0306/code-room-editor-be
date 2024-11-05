@@ -7,7 +7,7 @@ export class CodeRoom extends Document {
   @Prop({ required: true, unique: true })
   room_id: string;
 
-  @Prop({ required: true, minlength: 3, maxlength: 50 })
+  @Prop({ required: false, minlength: 3, maxlength: 50 })
   room_name: string;
 }
 

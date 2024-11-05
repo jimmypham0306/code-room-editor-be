@@ -3,8 +3,8 @@ import { CodeRoomInterface } from '../interfaces';
 
 export class CodeRoomModel implements CodeRoomInterface {
   @IsString()
-  roomId: string;
+  room_id: string;
 
   @IsString()
-  roomName: string;
+  room_name: string;
 }

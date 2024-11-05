@@ -1,4 +1,4 @@
 export interface CodeRoomInterface {
-  roomId: string;
-  roomName: string;
+  room_id: string;
+  room_name: string;
 }

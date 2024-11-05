@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import configuration from './common/config/models/configuration.model';
 import { ConfigurationInterface } from './common/config';
 import { CodeRoomModule } from './modules/code-room/code-room.module';
+import { WebsocketGateWayModule } from './modules/websocket-gateway/websocket-gateway.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { CodeRoomModule } from './modules/code-room/code-room.module';
       inject: [ConfigService],
     }),
     CodeRoomModule,
+    WebsocketGateWayModule,
   ],
   controllers: [AppController],
   providers: [AppService],
